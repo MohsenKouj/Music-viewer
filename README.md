@@ -156,32 +156,34 @@ while(True):
 - Then, enter the following code in your desired section:
 
 ```c#
-Provider MusicPlayer = new Provider();
-Events MusicEvent = new Events();
+static void main(){
+    Provider MusicPlayer = new Provider();
+    Events MusicEvent = new Events();
 
-string[] musics = {
-    "c:\\music_one.mp3",
-    "c:\\music_two.mp3",
-    "c:\\music_three.mp3",
-    "c:\\music_four.mp3"
-};
-byte event = 0;
-int round = 0;
-while(true){
-    if((event == MusicEvent.next()) || (event == MusicEvent.end())){
-        if(round < musics.length-1){
-            round++;
+    string[] musics = {
+        "c:\\music_one.mp3",
+        "c:\\music_two.mp3",
+        "c:\\music_three.mp3",
+        "c:\\music_four.mp3"
+    };
+    byte event = 0;
+    int round = 0;
+    while(true){
+        if((event == MusicEvent.next()) || (event == MusicEvent.end())){
+            if(round < musics.length-1){
+                round++;
+            }
         }
-    }
-    if(event == MusicEvent.prev()){
-        if(round > 0){
-            round--;
+        if(event == MusicEvent.prev()){
+            if(round > 0){
+                round--;
+            }
         }
+        if(event == MusicEvent.close()){
+            break;   
+        }
+        event = MusicPlayer.AttrebDisplay(musics[round]);
     }
-    if(event == MusicEvent.close()){
-        break;   
-    }
-    event = MusicPlayer.AttrebDisplay(musics[round]);
 }
 ```
 
