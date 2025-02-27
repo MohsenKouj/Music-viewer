@@ -18,12 +18,12 @@
 ## نحوه استفاده 
 #### استفاده در پایتون
 
-- ابتدا تمام فایل ها را از گیت هاب من دانلود و استخراج کنید 
-- سپس فایل preparing.exe (فقط برای یک بار) را اجرا کنید 
+- ابتدا تمام فایل ها را از گیت هاب من دانلود و استخراج کنید.
+- سپس فایل preparing.exe (فقط برای یک بار) .را اجرا کنید 
 
-- سپس پوشه music-veiwer را در مسیر مورد نظر خود قرار دهید
+- سپس پوشه music-veiwer .را در مسیر مورد نظر خود قرار دهید
 
-- و بعد این کد را در فایل مورد نظر خود وارد کنید:
+- .و بعد این کد را در فایل مورد نظر خود وارد کنید:
 
 
 ```python
@@ -58,8 +58,7 @@ while(True):
 
 برای استفاده از این کتابخانه، ابتدا آن را از گیت‌هاب دانلود کنید:  
 
- 
-git clone https://github.com/your-username/your-repo-name.git  
+**https://github.com/MohsenKouj/Music-viewer/archive/refs/heads/main.zip**  
   
 # Simple Music Player Library with a User-Friendly Interface  
 
