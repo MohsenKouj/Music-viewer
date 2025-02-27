@@ -74,12 +74,13 @@ This project is a simple music player library developed using **Python** and **C
 - **Support for Multiple Music Formats**: Common music formats like MP3, WAV, etc.  
 
 ## How to Use  
-# Use in python
-ابتدا فایل preparing.exe (فقط برای یک بار) را اجرا کنید
+### Use in python
 
-سپس پوشه music-veiwer را در مسیر مورد نظر خود قرار دهید
+First, run the preparing.exe file (only once).
 
-و بعد این کد را در فایل مورد نظر خود وارد کنید:
+Then, place the music-viewer folder in your desired location.
+
+After that, enter this code in your specified file:
 
 ```python
 
