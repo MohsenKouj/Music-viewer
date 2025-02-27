@@ -53,6 +53,45 @@ while(True):
     
 
 ```
+#### استفاده در سی‌شارپ
+
+- ابتدا فایل Music_Light_Class و NAudio را در Reference پروژه خود بر روی VisualStudio قرار دهید.
+- سپس کد زیر را در قسمت مورد نظر خود وارد کنید:
+
+
+```c#
+Provider MusicPlayer = new Provider();
+Events MusicEvent = new Events();
+
+string[] musics = {
+    "c:\\music_one.mp3",
+    "c:\\music_two.mp3",
+    "c:\\music_three.mp3",
+    "c:\\music_four.mp3"
+};
+byte event = 0;
+int round = 0;
+while(true){
+    if((event == MusicEvent.next()) || (event == MusicEvent.end())){
+        if(round < musics.length-1){
+            round++;
+        }
+    }
+    if(event == MusicEvent.prev()){
+        if(round > 0){
+            round--;
+        }
+    }
+    if(event == MusicEvent.close()){
+        break;   
+    }
+    event = MusicPlayer.AttrebDisplay(musics[round]);
+}
+
+
+
+```
+
 
 ## نصب کتابخانه  
 
@@ -111,3 +150,42 @@ while(True):
     
 
 ```
+#### Usage in C#
+
+- First, add the Music_Light_Class and NAudio files to the References of your project in Visual Studio.
+- Then, enter the following code in your desired section:
+
+```c#
+Provider MusicPlayer = new Provider();
+Events MusicEvent = new Events();
+
+string[] musics = {
+    "c:\\music_one.mp3",
+    "c:\\music_two.mp3",
+    "c:\\music_three.mp3",
+    "c:\\music_four.mp3"
+};
+byte event = 0;
+int round = 0;
+while(true){
+    if((event == MusicEvent.next()) || (event == MusicEvent.end())){
+        if(round < musics.length-1){
+            round++;
+        }
+    }
+    if(event == MusicEvent.prev()){
+        if(round > 0){
+            round--;
+        }
+    }
+    if(event == MusicEvent.close()){
+        break;   
+    }
+    event = MusicPlayer.AttrebDisplay(musics[round]);
+}
+
+
+### Installing the Library  
+
+To use this library, first clone the repository from GitHub:  
+**https://github.com/MohsenKouj/Music-viewer/archive/refs/heads/main.zip**  
