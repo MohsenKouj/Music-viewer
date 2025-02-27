@@ -15,7 +15,41 @@
 - **رابط کاربری ساده**: رابط کاربری تمیز و آسان برای استفاده.  
 - **پشتیبانی از چندین فرمت موزیک**: فرمت‌های رایج موزیک مانند MP3, WAV, و غیره.  
 
-## نحوه استفاده  
+## نحوه استفاده 
+# استفاده در پایتون
+ابتدا فایل preparing.exe (فقط برای یک بار) را اجرا کنید
+
+سپس پوشه music-veiwer را در مسیر مورد نظر خود قرار دهید
+
+و بعد این کد را در فایل مورد نظر خود وارد کنید:
+
+```python
+
+from music_galery import music_viewer
+
+musics = [
+    "c:\\music_one.mp3",
+    "c:\\music_two.mp3",
+    "c:\\music_three.mp3",
+    "c:\\music_four.mp3"
+]
+
+mv = music_viewer()
+round_ = 0
+while(True):
+    if mv.if_event_close():
+        break
+    elif mv.if_event_next() or mv.if_event_end():
+        if round_ < len(musics)-1:
+            round_ += 1
+    elif mv.if_event_prev():
+        if round_ > 0:
+            round_ -= 1
+
+    mv.play(musics[round_])
+    
+
+```
 
 ### نصب کتابخانه  
 
@@ -40,7 +74,40 @@ This project is a simple music player library developed using **Python** and **C
 - **Support for Multiple Music Formats**: Common music formats like MP3, WAV, etc.  
 
 ## How to Use  
+# Use in python
+ابتدا فایل preparing.exe (فقط برای یک بار) را اجرا کنید
 
+سپس پوشه music-veiwer را در مسیر مورد نظر خود قرار دهید
+
+و بعد این کد را در فایل مورد نظر خود وارد کنید:
+
+```python
+
+from music_galery import music_viewer
+
+musics = [
+    "c:\\music_one.mp3",
+    "c:\\music_two.mp3",
+    "c:\\music_three.mp3",
+    "c:\\music_four.mp3"
+]
+
+mv = music_viewer()
+round_ = 0
+while(True):
+    if mv.if_event_close():
+        break
+    elif mv.if_event_next() or mv.if_event_end():
+        if round_ < len(musics)-1:
+            round_ += 1
+    elif mv.if_event_prev():
+        if round_ > 0:
+            round_ -= 1
+
+    mv.play(musics[round_])
+    
+
+```
 ### Installing the Library  
 
 To use this library, first clone the repository from GitHub:  
