@@ -21,9 +21,9 @@
 
 برای استفاده از این کتابخانه، ابتدا آن را از گیت‌هاب دانلود کنید:  
 
-```bash  
+ 
 git clone https://github.com/your-username/your-repo-name.git  
-
+  
 # Simple Music Player Library with a User-Friendly Interface  
 
 This project is a simple music player library developed using **Python** and **C#**. It allows you to have real-time control over music playback and provides access to events such as **next track**, **previous track**, **music player closing**, and **end of track**.  
@@ -45,5 +45,5 @@ This project is a simple music player library developed using **Python** and **C
 
 To use this library, first clone the repository from GitHub:  
 
-```bash  
+
 git clone https://github.com/your-username/your-repo-name.git  
