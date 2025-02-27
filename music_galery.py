@@ -1,7 +1,7 @@
 import Listener # type: ignore
 from Music_Light_Class import Provider,Events # type: ignore
 
-class music_viewer():
+class music_player():
     provider = Provider()
     events = Events()
     path = ""
@@ -42,7 +42,7 @@ musics = [
     r"D:\Mohsen Yahaghi - Gele (320).mp3",
     r"D:\Naser Zeynali - Tavalod (320).mp3"
 ]
-mv = music_viewer()
+mv = music_player()
 round_ = 0
 while(True):
     if mv.if_event_close():

@@ -1,4 +1,4 @@
-# Music-viewer
+# Music-player demo 0.0.1 (only for windows)
  
 # کتابخانه پخش موزیک با رابط کاربری ساده  
 
@@ -20,15 +20,13 @@
 
 - ابتدا تمام فایل ها را از گیت هاب من دانلود و استخراج کنید.
 - سپس فایل preparing.exe (فقط برای یک بار) .را اجرا کنید 
-
 - سپس پوشه music-veiwer .را در مسیر مورد نظر خود قرار دهید
-
 - .و بعد این کد را در فایل مورد نظر خود وارد کنید:
 
 
 ```python
 
-from music_galery import music_viewer
+from music_galery import music_player
 
 musics = [
     "c:\\music_one.mp3",
@@ -56,7 +54,7 @@ while(True):
 #### استفاده در سی‌شارپ
 
 - ابتدا تمام فایل ها را از گیت هاب من دانلود و استخراج کنید.
-- فایل Music_Light_Class و NAudio را در Reference پروژه خود بر روی VisualStudio قرار دهید.
+- فایل **Libs\\Music_Light_Class.dll** و **Libs\\NAudio.dll** را در Reference پروژه خود بر روی VisualStudio قرار دهید.
 - سپس کد زیر را در قسمت مورد نظر خود وارد کنید:
 
 
@@ -165,7 +163,7 @@ while(True):
 #### Use in C#
 
 - First, download and extract all the files from my GitHub.
-- add the **Music_Light_Class** and **NAudio** files to the References of your project in Visual Studio.
+- add the **Libs\\Music_Light_Class.dll** and **Libs\\NAudio.dll** files to the References of your project in Visual Studio.
 - Then, enter the following code in your desired section:
 
 ```c#
