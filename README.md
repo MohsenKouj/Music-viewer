@@ -150,7 +150,7 @@ while(True):
     
 
 ```
-#### Usage in C#
+#### Use in C#
 
 - First, add the Music_Light_Class and NAudio files to the References of your project in Visual Studio.
 - Then, enter the following code in your desired section:
