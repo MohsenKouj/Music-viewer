@@ -55,7 +55,8 @@ while(True):
 ```
 #### استفاده در سی‌شارپ
 
-- ابتدا فایل Music_Light_Class و NAudio را در Reference پروژه خود بر روی VisualStudio قرار دهید.
+- ابتدا تمام فایل ها را از گیت هاب من دانلود و استخراج کنید.
+- فایل Music_Light_Class و NAudio را در Reference پروژه خود بر روی VisualStudio قرار دهید.
 - سپس کد زیر را در قسمت مورد نظر خود وارد کنید:
 
 
@@ -163,7 +164,8 @@ while(True):
 ```
 #### Use in C#
 
-- First, add the **Music_Light_Class** and **NAudio** files to the References of your project in Visual Studio.
+- First, download and extract all the files from my GitHub.
+- add the **Music_Light_Class** and **NAudio** files to the References of your project in Visual Studio.
 - Then, enter the following code in your desired section:
 
 ```c#
