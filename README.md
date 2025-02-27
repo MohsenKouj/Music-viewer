@@ -16,12 +16,15 @@
 - **پشتیبانی از چندین فرمت موزیک**: فرمت‌های رایج موزیک مانند MP3, WAV, و غیره.  
 
 ## نحوه استفاده 
-### استفاده در پایتون
-ابتدا فایل preparing.exe (فقط برای یک بار) را اجرا کنید
+#### استفاده در پایتون
 
-سپس پوشه music-veiwer را در مسیر مورد نظر خود قرار دهید
+- ابتدا تمام فایل ها را از گیت هاب من دانلود و استخراج کنید 
+- سپس فایل preparing.exe (فقط برای یک بار) را اجرا کنید 
 
-و بعد این کد را در فایل مورد نظر خود وارد کنید:
+- سپس پوشه music-veiwer را در مسیر مورد نظر خود قرار دهید
+
+- و بعد این کد را در فایل مورد نظر خود وارد کنید:
+
 
 ```python
 
@@ -51,7 +54,7 @@ while(True):
 
 ```
 
-### نصب کتابخانه  
+## نصب کتابخانه  
 
 برای استفاده از این کتابخانه، ابتدا آن را از گیت‌هاب دانلود کنید:  
 
@@ -74,14 +77,14 @@ This project is a simple music player library developed using **Python** and **C
 - **Support for Multiple Music Formats**: Common music formats like MP3, WAV, etc.  
 
 ## How to Use  
-### Use in python
+#### Use in python
 
-First, run the preparing.exe file (only once).
+- First, download and extract all the files from my GitHub.
+- Then, run the preparing.exe file (only once).
 
-Then, place the music-viewer folder in your desired location.
+- Next, place the music-viewer folder in your preferred location.
 
-After that, enter this code in your specified file:
-
+- Finally, enter this code in your designated file:
 ```python
 
 from music_galery import music_viewer
@@ -109,9 +112,3 @@ while(True):
     
 
 ```
-### Installing the Library  
-
-To use this library, first clone the repository from GitHub:  
-
-
-git clone https://github.com/your-username/your-repo-name.git  
