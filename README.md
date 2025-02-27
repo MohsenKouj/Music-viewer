@@ -118,9 +118,9 @@ This project is a simple music player library developed using **Python** and **C
 #### Use in python
 
 - First, download and extract all the files from my GitHub.
-- Then, run the preparing.exe file (only once).
+- Then, run the **preparing.exe** file (only once).
 
-- Next, place the music-viewer folder in your preferred location.
+- Next, place the **music-viewer** *folder* in your preferred location.
 
 - Finally, enter this code in your designated file:
 ```python
@@ -152,7 +152,7 @@ while(True):
 ```
 #### Use in C#
 
-- First, add the Music_Light_Class and NAudio files to the References of your project in Visual Studio.
+- First, add the **Music_Light_Class** and **NAudio** files to the References of your project in Visual Studio.
 - Then, enter the following code in your desired section:
 
 ```c#
