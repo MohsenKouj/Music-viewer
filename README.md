@@ -2,7 +2,7 @@
  
 # کتابخانه پخش موزیک با رابط کاربری ساده  
 
-این پروژه یک کتابخانه ساده برای پخش موزیک است که با استفاده از زبان‌های **پایتون** و **سی‌شارپ** توسعه داده شده است. این کتابخانه به شما امکان کنترل لحظه‌ای بر روی موزیک‌ها را می‌دهد و رویدادهایی مانند **موزیک بعدی**، **موزیک قبلی**، **بسته شدن پخش‌کننده موزیک** و **پایان موزیک** را پشتیبانی می‌کند و میتوانید از آن در پروژه های خود استفاده کنید زیرا فلسفه پشت ای ابزار استفاده در برنامه نویسی است.
+این پروژه یک کتابخانه ساده برای پخش موزیک است که با استفاده از زبان‌های **پایتون** و **سی‌شارپ** توسعه داده شده است. این کتابخانه به شما امکان کنترل لحظه‌ای بر روی موزیک‌ها را می‌دهد و رویدادهایی مانند **موزیک بعدی**، **موزیک قبلی**، **بسته شدن پخش‌کننده موزیک** و **پایان موزیک** را پشتیبانی می‌کند و میتوانید از آن در پروژه های خود استفاده کنید زیرا فلسفه پشت این ابزار استفاده در برنامه نویسی است.
 
 ## ویژگی‌های کلیدی  
 
@@ -36,7 +36,7 @@ musics = [
     "c:\\music_four.mp3"
 ]
 
-mv = music_viewer()
+mv = music_player()
 round_ = 0
 while(True):
     if mv.if_event_close():
@@ -49,6 +49,8 @@ while(True):
             round_ -= 1
 
     mv.play(musics[round_])
+    print(mv.check_error())
+
     
 
 ```
@@ -93,6 +95,9 @@ namespace musicPl
                 break;   
             }
             event = MusicPlayer.AttrebDisplay(musics[round]);
+            if(MusicPlayer.is_error()){
+                Console.WriteLine(MusicPlayer.error)
+            }
         }
     }
   }
@@ -136,7 +141,7 @@ This project is a simple music player library developed using **Python** and **C
 - Finally, enter this code in your designated file:
 ```python
 
-from music_galery import music_viewer
+from music_galery import music_player
 
 musics = [
     "c:\\music_one.mp3",
@@ -145,7 +150,7 @@ musics = [
     "c:\\music_four.mp3"
 ]
 
-mv = music_viewer()
+mv = music_player()
 round_ = 0
 while(True):
     if mv.if_event_close():
@@ -158,6 +163,7 @@ while(True):
             round_ -= 1
 
     mv.play(musics[round_])
+    print(mv.check_error())
     
 
 ```
@@ -200,6 +206,9 @@ namespace musicPl
                 break;   
             }
             event = MusicPlayer.AttrebDisplay(musics[round]);
+            if(MusicPlayer.is_error()){
+                Console.WriteLine(MusicPlayer.error)
+            }
         }
     }
   }

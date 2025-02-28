@@ -15,7 +15,11 @@ class music_player():
         self.occupation = False
         return self
 
-
+    def check_error(self):
+        if self.provider.is_error():
+           return self.provider.error
+        else:
+            return None 
     def if_event_close(self):
         if(self.event == self.events.close()):
             return True
@@ -35,24 +39,3 @@ class music_player():
         if(self.event == self.events.end()):
             return True
         return False
-    
-musics = [
-    r"D:\Majid Razavi - Manam (320).mp3",
-    r"D:\Mehrab - Khianat 128.mp3",
-    r"D:\Mohsen Yahaghi - Gele (320).mp3",
-    r"D:\Naser Zeynali - Tavalod (320).mp3"
-]
-mv = music_player()
-round_ = 0
-while(True):
-    if mv.if_event_close():
-        break
-    elif mv.if_event_next() or mv.if_event_end():
-        if round_ < len(musics)-1:
-            round_ += 1
-    elif mv.if_event_prev():
-        if round_ > 0:
-            round_ -= 1
-
-    mv.play(musics[round_])
-    
